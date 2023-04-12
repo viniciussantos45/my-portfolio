@@ -1,3 +1,35 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals", 
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["prettier"],
+  "rules": {
+    "react/display-name": [
+      "off",
+      {
+        "ignoreTranspilerName": false
+      }
+    ],
+    "react/no-children-prop": [
+      "off",
+      {
+        "allowFunctions": true
+      }
+    ],
+    "max-len": [
+      "warn",
+      {
+        "code": 130
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "none",
+        "semi": false,
+        "endOfLine": "auto"
+      }
+    ]
+  }
 }
