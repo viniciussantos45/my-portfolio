@@ -25,11 +25,11 @@ const Sidebar = () => {
   return (
     <MotionVStack
       alignItems='center'
-      spacing={4}
-      p={4}
-      h='100vh'
-      borderRadius='md'
-      bgGradient='linear(to-br, #e0f7fa, #ffff)'
+      spacing={6}
+      p={20}
+      h='100%'
+      borderRadius='xl'
+      bgGradient='linear(to-br, #84FFFF99, #ffffff)'
       backgroundSize='200% 200%'
       variants={gradientVariants}
       initial='initial'
@@ -40,14 +40,21 @@ const Sidebar = () => {
         name='Vinicius Gomes'
         src='https://media.licdn.com/dms/image/D4D03AQHWh2FUXeoMyw/profile-displayphoto-shrink_800_800/0/1667180672485?e=1686787200&v=beta&t=ogdXjOKfq40hhFUvJacC2LH9bJrCDBpzZyoBqdF2caI' // Sua imagem aqui
       />
-      <Heading as='h3' size='md' color='gray.600'>
+      <Heading as='h3' size='lg' color='gray.700'>
         Vinicius Gomes
       </Heading>
-      <Text fontSize='md'>Desenvolvedor Full Stack</Text>
+      <VStack spacing={2}>
+        <Text fontSize='md' color='gray.600' fontWeight='bold'>
+          Desenvolvedor Full Stack
+        </Text>
+        <Text fontSize='sm' color='gray.500'>
+          Rocketseat student
+        </Text>
+      </VStack>
       <Box>
         <IconButton
           as='a'
-          href='https://github.com/seuusuario'
+          href='https://github.com/viniciussantos45'
           target='_blank'
           rel='noopener noreferrer'
           aria-label='Github'
